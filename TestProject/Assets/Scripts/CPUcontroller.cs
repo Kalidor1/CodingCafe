@@ -12,6 +12,7 @@ public class CPUcontroller : MonoBehaviour
     public Color extremeLow;
     public float healthDecrease = 5f;
     public Rigidbody2D rigidBody;
+    
 
     [Range(0, 100)]
     public float health;
@@ -41,7 +42,7 @@ public class CPUcontroller : MonoBehaviour
             spriteRend.color = laptopColor;
                 }
 
-        else if (health < 50)
+        else if (health < 50 && health > 25)
         {
             spriteRend.color = lowHealth;
         }
