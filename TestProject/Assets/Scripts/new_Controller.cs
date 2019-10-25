@@ -20,22 +20,26 @@ public class new_Controller : MonoBehaviour
     public LayerMask whatIsGround;
     public Transform GroundCheck;
     private bool facingRight = true;
+   
 
     [Range(0, 100)]
     public float health;
     // Start is called before the first frame update
     void Start()
     {
+     
         string name = "Laura";
         Debug.Log(name);
 
         spriteRend.color = laptopColor;
 
+    
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+      
         if (Input.GetKey(KeyCode.Q))
         {
             health = health - 1 + healthDecrease * Time.deltaTime; //Decrease Health
@@ -64,6 +68,7 @@ public class new_Controller : MonoBehaviour
 
         isGrounded = Physics2D.OverlapCircle(GroundCheck.position, radius, whatIsGround);
 
+        
         if (Input.GetKeyDown(KeyCode.W) && isGrounded == true)
         {
             rigidBody.velocity = Vector2.up * jumpForce;
@@ -72,11 +77,12 @@ public class new_Controller : MonoBehaviour
         if (facingRight == false && moveInput > 0)
         {
             Flip();
+            
         }
         else if (facingRight == true && moveInput < 0)
         {
             Flip();
-
+            
         }
 
         void Flip()
