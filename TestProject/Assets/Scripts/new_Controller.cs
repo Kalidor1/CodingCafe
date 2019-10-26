@@ -15,7 +15,7 @@ public class new_Controller : MonoBehaviour
 
     private float moveInput;
     public float jumpForce;
-    private bool isGrounded;
+    public bool isGrounded;
     public float radius;
     public LayerMask whatIsGround;
     public Transform GroundCheck;
@@ -66,8 +66,12 @@ public class new_Controller : MonoBehaviour
         // laptop.position = new Vector3(laptop.position.x + (movementSpeed * x),laptop.position.y + (movementSpeed*y),0);
         rigidBody.velocity = new Vector2(moveInput * movementSpeed, rigidBody.velocity.y);
 
-        isGrounded = Physics2D.OverlapCircle(GroundCheck.position, radius, whatIsGround);
+        
+        
+      
 
+        
+        isGrounded = Physics2D.OverlapCircle(GroundCheck.position, radius, whatIsGround);
         
         if (Input.GetKeyDown(KeyCode.W) && isGrounded == true)
         {
@@ -93,6 +97,7 @@ public class new_Controller : MonoBehaviour
             transform.localScale = Scaler;
         }
 
+     
     }
     void Update()
     {

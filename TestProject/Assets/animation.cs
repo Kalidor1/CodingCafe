@@ -6,17 +6,27 @@ public class animation : MonoBehaviour
 {
     public Animator animator;
     Animator anim;
+    public bool isGrounded;
+    public float radius;
+    public LayerMask whatIsGround;
+    public Transform GroundCheck;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         anim.SetBool("isWalking", false);
+
+        
+
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        isGrounded = Physics2D.OverlapCircle(GroundCheck.position, radius, whatIsGround);
+
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && isGrounded)
         {
             anim.SetBool("isWalking", true);
         }
@@ -24,6 +34,11 @@ public class animation : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
         }
-      
+
+       
+        
+     
+
+
     }
 }
