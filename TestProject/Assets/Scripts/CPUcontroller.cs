@@ -19,8 +19,6 @@ public class CPUcontroller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string name = "Laura";
-        Debug.Log(name);
 
         spriteRend.color = laptopColor;
         

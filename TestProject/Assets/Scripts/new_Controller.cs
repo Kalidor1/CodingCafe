@@ -73,7 +73,7 @@ public class new_Controller : MonoBehaviour
         
         isGrounded = Physics2D.OverlapCircle(GroundCheck.position, radius, whatIsGround);
         
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded == true)
+        if (Input.GetKey(KeyCode.W) && isGrounded == true)
         {
             rigidBody.velocity = Vector2.up * jumpForce;
         }
