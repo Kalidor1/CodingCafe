@@ -50,6 +50,7 @@ public class spawner : MonoBehaviour
             Destroy(myObject, 2);
             timestamp = Time.time + timeBetweenShots;
         }
+       
         if (myObject.scene.IsValid() && dog.scene.IsValid())
             {
             if (myObject.GetComponent<BoxCollider2D>().IsTouching(dog.GetComponent<BoxCollider2D>()))
