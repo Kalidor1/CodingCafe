@@ -7004,6 +7004,8 @@ MonoBehaviour:
   y1: 0
   timeBetweenShots: 0.3
   facingRight: 1
+  myObject: {fileID: 547990436578506550, guid: 087a848a0ed7a2d45b71684019afec24, type: 3}
+  dog: {fileID: 1700726349}
 --- !u!4 &2121831893
 Transform:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 public class collision_cat : MonoBehaviour
 {
    
-    public BoxCollider2D catBox;
+    //public BoxCollider2D catBox;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +16,7 @@ public class collision_cat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         GameObject dog = GameObject.Find("dog");
         BoxCollider2D dog2 = dog.GetComponent<BoxCollider2D>();
         Rigidbody2D dog3 = dog.GetComponent<Rigidbody2D>();
@@ -23,6 +24,8 @@ public class collision_cat : MonoBehaviour
         if (catBox.IsTouching(dog2))
         {
             Debug.Log("HIT");
+     
         }
+        */
     }
 }
