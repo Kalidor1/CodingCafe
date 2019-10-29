@@ -10,12 +10,12 @@ public class CPUcontroller : MonoBehaviour
     public Color laptopColor;
     public Color lowHealth;
     public Color extremeLow;
-    public float healthDecrease = 5f;
+    public static float healthDecrease = 5f;
     public Rigidbody2D rigidBody;
     
 
     [Range(0, 100)]
-    public float health;
+    public static float health;
     // Start is called before the first frame update
     void Start()
     {

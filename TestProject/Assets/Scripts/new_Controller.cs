@@ -10,7 +10,7 @@ public class new_Controller : MonoBehaviour
     public Color laptopColor;
     public Color lowHealth;
     public Color extremeLow;
-    public float healthDecrease = 5f;
+    public static float healthDecrease = 5f;
     public Rigidbody2D rigidBody;
 
     private float moveInput;
@@ -23,7 +23,7 @@ public class new_Controller : MonoBehaviour
    
 
     [Range(0, 100)]
-    public float health;
+    public static float health;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +47,7 @@ public class new_Controller : MonoBehaviour
         else if (Input.GetKey(KeyCode.E))
         {
             health = health + 1 + healthDecrease * Time.deltaTime;
+            Debug.Log(health);
         }
 
         if (health > 50)

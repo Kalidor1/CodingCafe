@@ -11,7 +11,6 @@ public class spawner : MonoBehaviour
     private bool isReady;
     public float timeBetweenShots;
     private float timestamp;
-    private float projectileUpForce = 0f;
     public bool facingRight = true;
     private float moveInput;
     void Start()
@@ -45,8 +44,6 @@ public class spawner : MonoBehaviour
             myObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(projectileForwardForce, y1));
             Destroy(myObject, 2);
             timestamp = Time.time + timeBetweenShots;
-            
-            
         }
 
 
@@ -56,8 +53,6 @@ public class spawner : MonoBehaviour
             myObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-projectileForwardForce, y1));
             Destroy(myObject, 2);
             timestamp = Time.time + timeBetweenShots;
-
-
         }
 
 
