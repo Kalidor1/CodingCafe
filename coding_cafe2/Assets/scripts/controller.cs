@@ -65,5 +65,11 @@ public class controller : MonoBehaviour
             //spriteRend.flipX = true;
             transform.localScale = new Vector3(-1, 1, 1);
         }
+
+        /*Rigidbody2D coin = coins.GetComponent<Rigidbody2D>();
+        BoxCollider2D itemColl = item
+        if (coin.IsTouching())
+        */
+
     }
 }

@@ -10,5 +10,7 @@ public class bulletmanager : MonoBehaviour
     void Awake()
     {
         Destroy(this.gameObject, time);
+
+        
     }
 }
