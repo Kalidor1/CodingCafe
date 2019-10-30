@@ -42,9 +42,17 @@ public class controller : MonoBehaviour
         {
             anim.SetBool("walking", true);
         }
-        else
+        else if (xInput == 0f && grounded)
         {
             anim.SetBool("walking", false);
+        }
+        if (grounded == true)
+        {
+            anim.SetBool("grounded", true);
+        }
+        else if(grounded == false)
+        {
+            anim.SetBool("grounded", false);
         }
         if (xInput > 0f)
         {
