@@ -48,13 +48,14 @@ public class controller : MonoBehaviour
         }
         if (xInput > 0f)
         {
-            spriteRend.flipX = false;
-            //transform.localScale = new Vector3(1, 1, 1); -> if you want to flip whole character
+            //spriteRend.flipX = false;
+            transform.localScale = new Vector3(1, 1, 1); 
+            //-> if you want to flip whole character
         }
         else if (xInput < 0f)
         {
-            spriteRend.flipX = true;
-            //transform.localScale = new Vector3(-1, 1, 1);
+            //spriteRend.flipX = true;
+            transform.localScale = new Vector3(-1, 1, 1);
         }
     }
 }
