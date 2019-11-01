@@ -5,13 +5,13 @@ using UnityEngine;
 public class coinScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    
+    int coinValue = 1;
     private void OnTriggerEnter2D(Collider2D collision)
     {
    
         if (collision.gameObject.CompareTag("ItemColl"))
         {
-            Debug.Log("Touchy!");
+            scoreManager.instance.ScoreFunction(coinValue);
             Destroy(gameObject);
 
 
