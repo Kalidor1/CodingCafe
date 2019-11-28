@@ -6,9 +6,13 @@ using TMPro;
 public class scoreManager : MonoBehaviour
 
 {
-    public TextMeshProUGUI text;
+    public TextMeshProUGUI cointext;
+    public TextMeshProUGUI moneytext;
     public static scoreManager instance;
+    public int maxCollectedCoins;
+    [Header("CURRENT INVENTORY")]
     public int score;
+    public int collectedCoins;
 
     // Start is called before the first frame update
     void Start()
@@ -24,9 +28,17 @@ public class scoreManager : MonoBehaviour
     {
         
     }
-    public void ScoreFunction(int value)
+    public bool ScoreFunction(int value)
     {
-        score += value;
-        text.text = "Score: " + score.ToString();
+        if (collectedCoins +1 <= maxCollectedCoins)
+        {
+            collectedCoins++;
+            score += value;
+            cointext.text = "Coins: " + collectedCoins.ToString();
+            moneytext.text = "Money: " + score.ToString();
+            return true;
+            //once you return you are out of the function
+        }
+        return false;
     }
 }

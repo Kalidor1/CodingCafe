@@ -21,7 +21,7 @@ public class PlayerAttack : MonoBehaviour
         {
             timer -= Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.Mouse0) && timer <= 0)
+        if (Input.GetKey(KeyCode.LeftControl) && timer <= 0)
         {
             print("hi");
             timer = attackSpeed;
