@@ -144,7 +144,7 @@ MonoBehaviour:
   Speed: 1
   distance: 0.5
   groundDetection: {fileID: 2773798336690999476}
-  wallDistance: 0
+  wallDistance: 0.2
 --- !u!114 &5344745635056931321
 MonoBehaviour:
   m_ObjectHideFlags: 0
