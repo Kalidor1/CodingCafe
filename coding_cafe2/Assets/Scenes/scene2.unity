@@ -860,7 +860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502414490}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.367, y: -0.057, z: -1.9913667e-10}
+  m_LocalPosition: {x: 0.367, y: -0.057, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164196845}
@@ -2466,51 +2466,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7541521415633022272, guid: 71671e818d912864582ae888c66558b4,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7359531844632010990, guid: 71671e818d912864582ae888c66558b4,
-        type: 3}
-      propertyPath: points.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7359531844632010990, guid: 71671e818d912864582ae888c66558b4,
-        type: 3}
-      propertyPath: points.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7359531844632010990, guid: 71671e818d912864582ae888c66558b4,
-        type: 3}
-      propertyPath: points.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7359531844632010990, guid: 71671e818d912864582ae888c66558b4,
-        type: 3}
-      propertyPath: speed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7440146922699717207, guid: 71671e818d912864582ae888c66558b4,
-        type: 3}
-      propertyPath: direction
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7440146922699717207, guid: 71671e818d912864582ae888c66558b4,
-        type: 3}
-      propertyPath: moveSpeed
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7440146922699717207, guid: 71671e818d912864582ae888c66558b4,
-        type: 3}
-      propertyPath: distance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4975052396367140658, guid: 71671e818d912864582ae888c66558b4,
-        type: 3}
-      propertyPath: wallDistance
-      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71671e818d912864582ae888c66558b4, type: 3}
