@@ -23,15 +23,22 @@ public class CoinScript : MonoBehaviour
     {
         if (collision.CompareTag("Inventory"))
         {
+
             print(collision.gameObject.tag);
             PlayerInventory inv = collision.GetComponent<PlayerInventory>();
             if (inv != null)
             {
                 if( inv.addCoin(coinValue) ) {
                     Instantiate(explosionParticles, transform.position, Quaternion.identity);
+                    
+                    Camera.main.GetComponent<cameraShake>().Shake(0.1f, 3f);
+
                     Destroy(main);
                 }
             }    
+
         }
     }
+
 }
+

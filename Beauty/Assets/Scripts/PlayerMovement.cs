@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public float jumpPower;
     public bool grounded = false;
-
+    private Vector3 resetPosition;
    
     private Rigidbody2D rigidbody;
     private Animator anim;
@@ -47,14 +47,22 @@ public class PlayerMovement : MonoBehaviour
 
         if (xInput > 0f)
         {
-            //transform.localScale = new Vector3(1, 1, 1);
-            spriteRend.flipX = false;
+            transform.localScale = new Vector3(1, 1, 1);
+      
         }
         else if (xInput < 0f)
         {
-            //transform.localScale = new Vector3(-1, 1, 1);
-            spriteRend.flipX = true;
+            transform.localScale = new Vector3(-1, 1, 1);
+         
         }
     }
+    public void KillPlayer()
+    {
+        transform.position = resetPosition;
+    }
         
+    public void SetPosition(Vector3 pos)
+    {
+        resetPosition = pos;
+    }
 }

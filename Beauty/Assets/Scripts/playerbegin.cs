@@ -10,6 +10,9 @@ public class playerbegin : MonoBehaviour
     void Start()
     {
         GetComponent<SpriteRenderer> ().enabled = false;
-        GameObject.FindGameObjectWithTag("Player").transform.position = transform.position;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.transform.position = transform.position;
+
+        player.GetComponent<PlayerMovement>().SetPosition(transform.position);
     }
 }

@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            //SceneManager.GetActiveScene().buildIndex; <- get current scene
             SceneManager.LoadScene(sceneToLoad);
         }
     }

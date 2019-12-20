@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Enemy
   - Inventory
+  - PlayerWeapon
   layers:
   - Default
   - TransparentFX
@@ -52,4 +53,10 @@ TagManager:
     locked: 0
   - name: coins
     uniqueID: 3511962077
+    locked: 0
+  - name: particles
+    uniqueID: 1260510159
+    locked: 0
+  - name: GameUI
+    uniqueID: 3312912709
     locked: 0
